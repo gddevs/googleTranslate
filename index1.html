@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Tradutor</title>
+    <link rel="stylesheet" href="./style1.css">
+    <script src="./main1.js" defer></script>
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="./assets/Google_2015_logo.svg.png" width="80" alt="Logo Google"/>
+        <span>Tradutor</span>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <input type="radio" name="source-lang" value="pt" checked />
+                    <span>Português</span>
+                </div>
+            </div>
+            <textarea id="source-text"></textarea>
+        </section>
+        <section>
+            <div>
+                <div class="container-lang">
+                    <div>
+                        <input type="radio" name="target-lang" value="en" checked onchange="handleTyping()" />
+                        <span>Inglês</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="target-lang" value="es" checked onchange="handleTyping()" />
+                        <span>Espanhol</span>
+                    </div>
+                 </div>   
+            </div>
+            
+            <textarea id="target-text" readonly>Tradução</textarea>
+        </section>
+    </main>
+</body>
+</html>
